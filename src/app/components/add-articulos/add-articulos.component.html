@@ -1,0 +1,11 @@
+
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  Id:
+  <input type="text" class="form-control" formControlName="id" />
+  Nombre:
+  <input type="text" class="form-control" formControlName="nombre" /> Familia:
+  <input type="text" class="form-control" formControlName="familia" /> Precio:
+  <input type="text" class="form-control" formControlName="precio" /> Stock:
+  <input type="text" class="form-control" formControlName="stock" />
+  <button class="btn btn-dark" type="submit">Enviar</button>
+</form>

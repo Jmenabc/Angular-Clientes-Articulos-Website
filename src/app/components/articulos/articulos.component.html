@@ -1,0 +1,9 @@
+<div class="m-4">
+  <h1>Articulos</h1>
+  <p>Pulsa en los nombres para ver sus detalles y poder editarlos</p>
+  <p>Si quieres borrarlo pulsa el boton de al lado de color rojo</p>
+  <div *ngFor="let articulo of articulos">
+    <button type="button" class="btn btn-dark btn-lg m-2 p-2 px-3">{{articulo.nombre}}</button>
+    <button type="button" class="btn btn btn-danger btn-lg m-2 p-2 px-3" (click)="delete(articulo)">Borrar</button>
+  </div>
+</div>
