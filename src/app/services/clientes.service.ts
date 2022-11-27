@@ -4,6 +4,7 @@ import {
   deleteDoc,
   doc,
   Firestore,
+  updateDoc,
 } from '@angular/fire/firestore';
 import { addDoc, collection } from '@firebase/firestore';
 import { Observable } from 'rxjs';
@@ -28,5 +29,10 @@ export class ClientesService {
   deleteCliente(cliente: Cliente) {
     const ClientDocRef = doc(this.firestore, `Clientes/${cliente.id}`);
     return deleteDoc(ClientDocRef);
+  }
+
+  updateCliente(cliente: Cliente) {
+    const ClientDocRef = doc(this.firestore, `Clientes/${cliente.id}`);
+    // return updateDoc();
   }
 }
