@@ -11,6 +11,11 @@ export class ClientesComponent {
   clientes?: Cliente[];
   constructor(private cService: ClientesService) {}
 
+  async delete(cliente: Cliente) {
+    const response = await this.cService.deleteCliente(cliente);
+    console.log(response);
+  }
+
   ngOnInit(): void {
     this.cService.getClientes().subscribe((clientes) => {
       this.clientes = clientes;
