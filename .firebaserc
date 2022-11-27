@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mis-malditas-ventas": {
+      "hosting": {
+        "ventitas": [
+          "mis-malditas-ventas"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mis-malditas-ventas"
+  }
+}
